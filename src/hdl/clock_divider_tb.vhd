@@ -77,7 +77,7 @@ begin
 
 	-- map ports for any component instances (port mapping is like wiring hardware)
 	uut_inst : clock_divider 
-	generic map ( k_DIV => k_clock_divs )
+	generic map ( k_DIV => k_clock_divs)
 	port map (
 		i_clk   => clk,
 		i_reset => reset,
