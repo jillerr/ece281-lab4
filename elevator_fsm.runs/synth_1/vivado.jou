@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Apr 11 14:28:55 2024
+# Process ID: 10084
+# Current directory: C:/ECE281/ece281-lab4/elevator_fsm.runs/synth_1
+# Command line: vivado.exe -log top_basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_basys3.tcl
+# Log file: C:/ECE281/ece281-lab4/elevator_fsm.runs/synth_1/top_basys3.vds
+# Journal file: C:/ECE281/ece281-lab4/elevator_fsm.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_basys3.tcl -notrace
