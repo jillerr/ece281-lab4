@@ -144,7 +144,7 @@ begin
     generic map (k_DIV => k_clock_divs )
     port map (
          i_clk   => clk,
-         i_reset => btnL or btnU,
+         i_reset => w_reset_clock,
          o_clk    => w_clk
     );
     
@@ -170,7 +170,7 @@ begin
 	port map(
 	     i_stop => sw(0),
 	     i_up_down => sw(1),
-	     i_reset => btnR or btnU,
+	     i_reset => w_reset_elev,
 	     i_clk => w_clk,
 	     o_floor => w_floor
 	);
@@ -182,7 +182,8 @@ begin
 	);
 	
 	-- CONCURRENT STATEMENTS ----------------------------
-	
+	w_reset_clock <= btnL or btnU;
+	w_reset_elev <= btnR or btnU;
 	-- LED 15 gets the FSM slow clock signal. The rest are grounded.
 	led <= (15 => w_clk, others => '0');
 
