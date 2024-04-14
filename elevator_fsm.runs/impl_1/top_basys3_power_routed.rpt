@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Thu Apr 11 14:30:24 2024
+| Date             : Sun Apr 14 16:28:33 2024
 | Host             : C26-5CG2151M88 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_basys3_power_routed.rpt -pb top_basys3_power_summary_routed.pb -rpx top_basys3_power_routed.rpx
 | Design           : top_basys3
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.074        |
+| Total On-Chip Power (W)  | 0.109        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.002        |
+| Dynamic (W)              | 0.037        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.6         |
-| Junction Temperature (C) | 25.4         |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       96 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       31 |     20800 |            0.15 |
-|   CARRY4       |    <0.001 |        8 |      8150 |            0.10 |
-|   Register     |    <0.001 |       34 |     41600 |            0.08 |
-|   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |    <0.001 |       90 |       --- |             --- |
-| I/O            |     0.001 |       33 |       106 |           31.13 |
+| Slice Logic    |    <0.001 |      166 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       52 |     20800 |            0.25 |
+|   CARRY4       |    <0.001 |       16 |      8150 |            0.20 |
+|   Register     |    <0.001 |       69 |     41600 |            0.17 |
+|   Others       |     0.000 |       10 |       --- |             --- |
+| Signals        |    <0.001 |      151 |       --- |             --- |
+| I/O            |     0.035 |       33 |       106 |           31.13 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.074 |          |           |                 |
+| Total          |     0.109 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.010 |       0.001 |      0.010 |
-| Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vccint    |       1.000 |     0.011 |       0.002 |      0.010 |
+| Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |
+| Vcco33    |       3.300 |     0.011 |       0.010 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -140,10 +140,11 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| top_basys3      |     0.002 |
-|   decoder_inst  |    <0.001 |
+| top_basys3      |     0.037 |
 |   elevator_inst |    <0.001 |
+|   tdm_inst      |    <0.001 |
 |   uut_inst      |    <0.001 |
+|   uut_inst2     |    <0.001 |
 +-----------------+-----------+
 
 

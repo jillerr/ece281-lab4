@@ -31,6 +31,7 @@ set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo c:/ECE281/ece281-lab4/elevator_fsm.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
+  C:/ECE281/ece281-lab4/src/hdl/TDM4.vhd
   C:/ECE281/ece281-lab4/src/hdl/clock_divider.vhd
   C:/ECE281/ece281-lab4/src/hdl/elevator_controller_fsm.vhd
   C:/ECE281/ece281-lab4/src/hdl/sevenSegDecoder.vhd
